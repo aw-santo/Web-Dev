@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listening</title>
+    <style>
+        #btn{
+            padding: 5px 8px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    Browser events :
+        <!-- click
+        context menu
+        mouseover/mouseout
+        mousedown/mouseup
+        mousemove
+
+        submit
+        focus
+
+        DOMContentloaded
+
+        transitionend -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, odit quam. Laborum, ea dolorum? Quidem eum sed consectetur aut iste fuga obcaecati atque illum hic, voluptas officiis illo rem sequi facere nemo. Rerum quod fugiat cum architecto qui eum! Voluptatem numquam harum odit iusto aspernatur ipsam sit qui accusantium aliquid laudantium beatae veniam deleniti eum ipsum temporibus adipisci iste autem pariatur vitae, laboriosam a culpa porro nulla! Sit quasi porro ratione sequi dignissimos error! Blanditiis fugit eos error deserunt ex, est optio, porro quas numquam voluptatibus facilis. Explicabo, harum aperiam quaerat placeat cumque vitae mollitia aut, eligendi neque voluptatibus tempore?</p>
+    </div>
+    <button id="btn" >Show/Hide</button>
+    
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log("Mouse in");
+        })
+        para.addEventListener('mouseout', function run(){
+            console.log("Mouse outside");
+        })
+
+        let btn = document.getElementById('btn');
+        // let para = document.getElementById('para');
+        btn.addEventListener('click', function run(){
+                if (para.style.display != 'none') {
+                        para.style.display = 'none';
+                    }
+                    else{
+                            para.style.display = 'block';
+                        }
+                    })
+                    
+        // function toggleHide(){
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para');
+        //     if (para.style.display != 'none') {
+        //         para.style.display = 'none';
+        //     }
+        //     else{
+        //         para.style.display = 'block';
+        //     } 
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+           background-color: burlywood; 
+           border: 3px solid purple;
+           border-radius: 50px;
+           width: 250px;
+           /* height: 215px; */
+           position: center right;
+           /* box-sizing: border-box; */
+           padding: 70px 70px;
+           margin: 50px;
+           /* padding:top right bottom left; */
+           /* padding: 30px 50px 30px 50px; */
+           
+        }
+        #third{
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is 1st heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium beatae quisquam natus qui nobis culpa ut excepturi ullam animi architecto?</p>
+    </div>
+    <div class="container">
+        <h3>This is 2nd heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium beatae quisquam natus qui nobis culpa ut excepturi ullam animi architecto?</p>
+    </div>
+    <div class="container">
+        <h3>This is 3rd heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium beatae quisquam natus qui nobis culpa ut excepturi ullam animi architecto?</p>
+    </div>
+</body>
+</html>

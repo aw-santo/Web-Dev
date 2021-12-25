@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- <script>
+    let time1 = Date.now();
+</script> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is math object tutorial</h1>
+    </div>
+    <script>
+        let m = Math;
+        // console.log(m);
+
+        // console.log("E = "+m.E);
+        // console.log("PI = "+m.PI);
+        // console.log("LN10 = "+m.LN10);
+        // console.log("LN2 = "+m.LN2);
+        // console.log("LOG10E = "+m.LOG10E);
+        // console.log("LOG2E = "+m.LOG2E);
+        // console.log("SQRT2 = "+m.SQRT2);
+        // console.log("SQRT1_2 = "+m.SQRT1_2);
+
+        let a = 34.64534;
+        let b = 89;
+        console.log(a, b);
+        console.log(m.round(a), m.round(b));
+
+        console.log("3^2 : ", +m.pow(3, 2));
+
+        console.log("root of 50 : ", +m.sqrt(36));
+        console.log("root of 50 : ", +m.round(m.sqrt(50)));
+
+        console.log("ceil of 5.7 : " + m.ceil(5.7));
+        console.log("floor of 5.7 : " + m.floor(5.7));
+
+        console.log("Abs of 5.6 : " + m.abs(5.6));
+        console.log("Abs of -5.6 : " + m.abs(-5.6));
+
+        console.log("sin(PI) : " + m.sin(m.PI));
+        console.log("sin(PI) : " + m.sin(m.PI / 2));
+
+        console.log("min value of 4, 5, 6 is : " + m.min(4, 5, 6));
+        console.log("max value of 4, 5, 6 is : " + m.max(4, 5, 6));
+
+        let r = m.random()
+        console.log("random no. : " + r);
+
+        let a1 = 1;
+        let b1 = 100;
+        let rand = a + (b - a) * Math.random();
+        console.log("Random no. bet^n %d and %d : %d", a1, b1, rand);
+
+
+    </script>
+</body>
+<!-- <script>
+    let time2 = Date.now();
+</script> -->
+
+</html>
