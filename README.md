@@ -2,4 +2,4 @@
 
 **To get familiar with html -- css -- js ...**
 
-### look through the folders ###
+### look through the folders get the code ###
